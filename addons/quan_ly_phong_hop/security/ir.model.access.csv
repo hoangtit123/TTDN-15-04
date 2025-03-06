@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_dat_phong_hop,dat_phong_hop.dat_phong_hop,model_dat_phong_hop,base.group_user,1,1,1,1
+access_phong_hop,phong_hop.phong_hop,model_phong_hop,base.group_user,1,1,1,1
+access_thiet_bi,thiet_bi.thiet_bi,model_thiet_bi,base.group_user,1,1,1,1

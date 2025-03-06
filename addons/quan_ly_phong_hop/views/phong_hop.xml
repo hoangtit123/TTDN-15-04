@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_phong_hop_form" model="ir.ui.view">
+            <field name="name">phong_hop</field>
+            <field name="model">phong_hop</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_read_only" style="font-size:25px">Phòng họp</div>
+                        <group col="4" string="Thông tin chung">
+                            <field name="ma_phong_hop"/>
+                            <field name="ten_phong_hop"/>
+                        </group>
+<notebook>
+    <page string="Lịch đặt phòng">
+        <field name="dat_phong_hop_ids">
+            <tree editable="bottom">
+                <field name="ma_dat_phong"/>
+                <field name="ten_cuoc_hop"/>
+                <field name="bat_dau"/>
+                <field name="ket_thuc"/>
+            </tree>
+        </field>
+    </page>
+</notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_phong_hop_tree" model="ir.ui.view">
+            <field name="name">phong_hop</field>
+            <field name="model">phong_hop</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="ma_phong_hop"/>
+                    <field name="ten_phong_hop"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="phong_hop_search">
+            <field name="model">phong_hop</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="ma_phong_hop"/>
+                    <field name="ten_phong_hop"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_phong_hop" model="ir.actions.act_window">
+            <field name="name">Phòng họp</field>
+            <field name="res_model">phong_hop</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref = "phong_hop_search"/>
+        </record>
+    </data>
+</odoo>

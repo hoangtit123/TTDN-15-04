@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_dat_phong_hop_form" model="ir.ui.view">
+            <field name="name">dat_phong_hop</field>
+            <field name="model">dat_phong_hop</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_read_only" style="font-size:25px">Đặt phòng họp</div>
+                        <group col="4" string="Thông tin chung">
+                            <field name="ma_dat_phong"/>
+                            <field name="ngay_dat_phong"/>
+                            <field name="bat_dau"/>
+                            <field name="ket_thuc"/>
+                            <field name="ten_cuoc_hop"/>
+                            <field name="phong_hop_id"/>  
+                        </group>
+
+                        <notebook>
+                            <page string="Phòng họp">
+                                <group>
+                                    <field name="phong_hop_id"/>
+                                </group>
+                            </page>
+                        </notebook>
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_dat_phong_hop_tree" model="ir.ui.view">
+            <field name="name">dat_phong_hop</field>
+            <field name="model">dat_phong_hop</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="ma_dat_phong"/>
+                    <field name="ngay_dat_phong"/>
+                    <field name="bat_dau"/>
+                    <field name="ket_thuc"/>
+                    <field name="ten_cuoc_hop"/>
+                    <field name="phong_hop_id"/> 
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="dat_phong_hop_search">
+            <field name="model">dat_phong_hop</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="ma_dat_phong"/>
+                    <field name="ngay_dat_phong"/>
+                    <field name="bat_dau"/>
+                    <field name="ket_thuc"/>
+                    <field name="ten_cuoc_hop"/>
+                    <field name="phong_hop_id"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_dat_phong_hop" model="ir.actions.act_window">
+            <field name="name">Đặt phòng họp</field>
+            <field name="res_model">dat_phong_hop</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="dat_phong_hop_search"/>
+        </record>
+    </data>
+</odoo>

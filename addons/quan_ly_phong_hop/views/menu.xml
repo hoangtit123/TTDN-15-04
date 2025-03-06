@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem
+            id="menu_root"
+            name="Quản Lý Phòng Họp"
+            sequence="0"/>
+          
+        <menuitem name="Thông tin đặt phòng" 
+            id="menu_dat_phong_hop" 
+            parent="menu_root" 
+            sequence="2"
+            action="action_dat_phong_hop"
+        />
+        <menuitem name="Quản lý phòng họp" 
+            id="menu_phong_hop" 
+            parent="menu_root" 
+            sequence="1"
+            action="action_phong_hop"
+        />
+        <menuitem name="Quản lý thiết bị" 
+            id="menu_thiet_bi" 
+            parent="menu_root" 
+            sequence="3"
+            action="action_thiet_bi"
+        />
+        
+    </data>
+</odoo>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_thiet_bi_form" model="ir.ui.view">
+            <field name="name">thiet_bi</field>
+            <field name="model">thiet_bi</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_read_only" style="font-size:25px">Thiết bị</div>
+                        <group col="4" string="Thông tin chung">
+                            <field name="ma_thiet_bi"/>
+                            <field name="ten_thiet_bi"/>
+                        </group>
+                       
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_thiet_bi_tree" model="ir.ui.view">
+            <field name="name">thiet_bi</field>
+            <field name="model">thiet_bi</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="ma_thiet_bi"/>
+                    <field name="ten_thiet_bi"/>
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="thiet_bi_search">
+            <field name="model">thiet_bi</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="ma_thiet_bi"/>
+                    <field name="ten_thiet_bi"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_thiet_bi" model="ir.actions.act_window">
+            <field name="name">Chức vụ</field>
+            <field name="res_model">thiet_bi</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref = "thiet_bi_search"/>
+        </record>
+    </data>
+</odoo>
