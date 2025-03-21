@@ -7,6 +7,30 @@
 [![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)
 
 
+# Giới thiệu về dự án quản lý phòng họp
+## Hệ thống sẽ được triển khai trong các doanh nghiệp có quy mô vừa và lớn, nơi có nhiều phòng họp và nhu cầu tổ chức cuộc họp thường xuyên. Ngoài ra, hệ thống cũng có thể được mở rộng để áp dụng cho các tổ chức giáo dục, cơ quan hành chính và doanh nghiệp đa chi nhánh có nhu cầu quản lý phòng họp phức tạp. Dự án bao gồm các chức năng sau:
+- Quản lý phòng họp
+- Quản lý thiết bị
+- Người quản lý phòng
+- Quản lý đặt phòng
+- Tạo phòng họp
+- Thêm thiết bị
+- Thêm người quản lý phòng
+
+  ![image](https://github.com/user-attachments/assets/5f578112-c6a3-4792-b639-380e8c7243a2)
+  ![image](https://github.com/user-attachments/assets/757c8b67-1dca-43aa-bac4-5e7f4bd932b9)
+  ![image](https://github.com/user-attachments/assets/0d139ed6-61d3-4f22-bbc5-a9a5ad54be6c)
+  ![image](https://github.com/user-attachments/assets/19ecf9cd-9f64-4187-af8e-8e2f8fd92901)
+  ![image](https://github.com/user-attachments/assets/6bf6c90f-34e1-40d0-a507-f6cb49d8271f)
+  ![image](https://github.com/user-attachments/assets/9a2c5376-f828-49a5-a8a6-ead3e732e8f2)
+  ![image](https://github.com/user-attachments/assets/a0c6b592-fefe-4324-91e1-521b68b85725)
+
+
+
+
+
+
+
 
 # 1. Cài đặt công cụ, môi trường và các thư viện cần thiết
 
